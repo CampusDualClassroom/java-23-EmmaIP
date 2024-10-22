@@ -14,7 +14,13 @@ public class Doctor extends Person {
 	}
 
 	public void setSpecialization(String specialization) {
+
 		this.specialization = specialization;
+	}
+
+	@Override
+	public void getDetails() {
+		System.out.println("Doctor: " + name + " " + surname + ", especialización " + specialization.toLowerCase());
 	}
 
 }
